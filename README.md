@@ -29,7 +29,7 @@ The trained models are available in the format used by each framework, and distr
 - Mask RCNN: [weights]().
 - RetinaNet: [weights]().
 - SSD: [weights]().
-- YOLO: [weights](), [config file]().
+- YOLO: [weights](https://www.dropbox.com/s/jbgosn1t83h1bqi/tablasFinaltrain_10000.weights?dl=0), [config file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/tablasFinaltest416320.cfg), [names file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/vocTablas.names).
 
 ## Colab Notebooks for prediction
 You can use the trained models with the following notebooks. 
