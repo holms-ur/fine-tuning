@@ -39,10 +39,7 @@ You can use the trained models with the following notebooks.
 - [SSD Notebook](https://colab.research.google.com/drive/1s8xoKf1gk0Aqs324genSCXXNVG3R-wJc)
 - [YOLO Notebook](https://colab.research.google.com/drive/19x3FL2vUjF0as6CKrYKmjrqsiiUTjkw6)
 
-## Model Zoo
-
-
-## Code for fine-tuning
+## Fine-tuning
 
 
 
