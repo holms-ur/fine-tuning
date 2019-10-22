@@ -31,8 +31,8 @@ import numpy as np
 def getOutputsNames(net):
     # Get the names of all the layers in the network
     layersNames = net.getLayerNames()
-    for i in net.getUnconnectedOutLayers():
-        print(i[0]-1)
+    #for i in net.getUnconnectedOutLayers():
+    #    print(i[0]-1)
     # Get the names of the output layers, i.e. the layers with unconnected outputs
     return [layersNames[i[0] - 1] for i in net.getUnconnectedOutLayers()]
 
@@ -161,7 +161,6 @@ def predict(name):
 
     # Remove the bounding boxes with low confidence
     boxes1=postprocess(frame, outs)
-    print(len(boxes1))
     # Put efficiency information. The function getPerfProfile returns the 
     # overall time for inference(t) and the timings for each of the layers(in layersTimes)
     t, _ = net.getPerfProfile()
