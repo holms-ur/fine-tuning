@@ -31,7 +31,13 @@ The trained models are available in the format used by each framework, and distr
 - SSD: [weights]().
 - YOLO: [weights](), [config file]().
 
-## Notebooks for prediction
+## Colab Notebooks for prediction
+You can use the trained models with the following notebooks. 
+
+- [MaskRCNN Notebook]()
+- [RetinaNet Notebook]()
+- [SSD Notebook]()
+- [YOLO Notebook](https://colab.research.google.com/drive/19x3FL2vUjF0as6CKrYKmjrqsiiUTjkw6)
 
 ## Model Zoo
 
