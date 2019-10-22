@@ -24,11 +24,12 @@ To evaluate our models, we have employed the same metric used in the [ICDAR 2019
 
 ### Model Zoo
 
-The files for each model can be con
+The trained models are available in the format used by each framework, and distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
 
-
-
-
+- Mask RCNN: [weights]().
+- RetinaNet: [weights]().
+- SSD: [weights]().
+- YOLO: [weights](), [config file]().
 
 ## Notebooks for prediction
 
