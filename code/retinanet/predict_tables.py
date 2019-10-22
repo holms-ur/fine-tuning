@@ -10,6 +10,7 @@ from keras_retinanet import models
 import numpy as np
 import argparse
 import cv2
+import matplotlib.pyplot as plt
 
 
 
@@ -51,3 +52,15 @@ def predict(imagePath):
 
 	# show the output image
 	cv2.imwrite("prediction.jpg", output)
+
+
+def showImage(image):
+    if len(image.shape)==3:
+        img2 = image[:,:,::-1]
+        plt.imshow(img2)
+        plt.show()
+    else:
+        img2 = image
+        plt.imshow(img2,cmap='gray')
+        plt.show()
+
