@@ -19,7 +19,7 @@ inpHeight = 416       #Height of network's input image
 
 # In[2]:
 
-
+import matplotlib.pyplot as plt
 import cv2 as cv
 import numpy as np
 
@@ -173,5 +173,13 @@ def predict(name):
 # In[ ]:
 
 
-
+def showImage(image):
+    if len(image.shape)==3:
+        img2 = image[:,:,::-1]
+        plt.imshow(img2)
+        plt.show()
+    else:
+        img2 = image
+        plt.imshow(img2,cmap='gray')
+        plt.show()
 
