@@ -44,3 +44,14 @@ def predict(imagePath):
 
 
 
+
+import matplotlib.pyplot as plt
+def showImage(image):
+    if len(image.shape)==3:
+        img2 = image[:,:,::-1]
+        plt.imshow(img2)
+        plt.show()
+    else:
+        img2 = image
+        plt.imshow(img2,cmap='gray')
+        plt.show()
