@@ -26,7 +26,7 @@ To evaluate our models, we have employed the same metric used in the [ICDAR 2019
 
 The trained models are available in the format used by each framework, and distributed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html)
 
-- Mask RCNN: [weights]().
+- Mask RCNN: [weights](https://www.dropbox.com/s/dcl53rl3xqndfdx/mask_rcnn_tablebank_cfg_0002.h5).
 - RetinaNet: [weights](https://www.dropbox.com/s/iwve914qp6d2nmy/output.h5?dl=0), [classes file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/retinanet/retinanet_classes.csv).
 - SSD: [weights]().
 - YOLO: [weights](https://www.dropbox.com/s/jbgosn1t83h1bqi/tablasFinaltrain_10000.weights?dl=0), [config file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/tablasFinaltest416320.cfg), [names file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/vocTablas.names).
@@ -34,7 +34,7 @@ The trained models are available in the format used by each framework, and distr
 ## Colab Notebooks for prediction
 You can use the trained models with the following notebooks. 
 
-- [MaskRCNN Notebook]()
+- [MaskRCNN Notebook](https://colab.research.google.com/drive/1smseOGcUZZjvMfDHnoW8-ancldz-zpOg)
 - [RetinaNet Notebook](https://colab.research.google.com/drive/1Zgu7v7jLAKe-xITDbhBe9EDdCUozW-OB)
 - [SSD Notebook]()
 - [YOLO Notebook](https://colab.research.google.com/drive/19x3FL2vUjF0as6CKrYKmjrqsiiUTjkw6)
