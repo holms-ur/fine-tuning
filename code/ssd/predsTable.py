@@ -36,3 +36,4 @@ def showImage(image):
         img2 = image
         plt.imshow(img2,cmap='gray')
         plt.show()
+
