@@ -35,7 +35,7 @@ def predict(imagePath):
 	# loop over the detections
 	for (box, score, label) in zip(boxes[0], scores[0], labels[0]):
 		# filter out weak detections
-		if score < args["confidence"]:
+		if score < 0.5:
 			continue
 	
 		# convert the bounding box coordinates from floats to integers
