@@ -1,4 +1,4 @@
-# Fine tuning with the Mask RCNN algorithm.
+# Fine tuning with the RetinaNet algorithm.
 
 ## Installation 
 
