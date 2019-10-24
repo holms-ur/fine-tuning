@@ -43,7 +43,10 @@ You can use the trained models with the following notebooks.
 ## Model Zoo for table detection
 
 
-[Results transfer learning from natural images](images/das.png)
+![Results transfer learning from natural images](images/das.png)
+
+
+![Results transfer learning from the TableBank dataset](images/dasTrans.png)
 
 
 
