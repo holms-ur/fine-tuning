@@ -9,7 +9,7 @@ virtual environment and install the dependencies using the following command.
 pip install -r requirementsMaskRCNN.txt
 ```
 
-The [requirementsMaskRCNN](code/maskrcnn/requirementsMaskRCNN.txt) can be found in the code folder. 
+The [requirementsMaskRCNN](../code/maskrcnn/requirementsMaskRCNN.txt) can be found in the code folder. 
 
 ## Folder structure
 
@@ -35,7 +35,7 @@ The images must be annotated using the Pascal VOC dataset (xml files of the ``an
 
 In order to fine-tune a model using this algorithm, it is necessary to download the following files in the folder ``maskrcnnmodels``:
 - [TableBank weights](https://www.dropbox.com/s/dcl53rl3xqndfdx/mask_rcnn_tablebank_cfg_0002.h5?dl=1).
-- [Template training file](code/maskrcnn/template.py)
+- [Template training file](../code/maskrcnn/template.py)
 
 ## Training
 
@@ -45,7 +45,7 @@ First of all, it is necessary to modify the template file downloaded in the prev
 python template.py
 ```
 
-The models will be stored in a folder called ``model_cfg``. You can use the models created in there using the [Mask RCNN notebook](https://colab.research.google.com/drive/1smseOGcUZZjvMfDHnoW8-ancldz-zpOg) only by changing the weights files. 
+The weights of the models will be stored in a folder called ``model_cfg``. You can use the models created in there using the [Mask RCNN notebook](https://colab.research.google.com/drive/1smseOGcUZZjvMfDHnoW8-ancldz-zpOg) or the [predict file](./code/maskrcnn/predict.py) only by changing the weights files. 
 
 
 
