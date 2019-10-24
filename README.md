@@ -163,6 +163,22 @@ The trained models are available in the format used by each framework, and distr
 - MarmotEn: [weights](), [config file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/tablasFinaltest416320.cfg), [names file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/vocTablas.names).
 - UNLV: [weights](), [config file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/tablasFinaltest416320.cfg), [names file](https://raw.githubusercontent.com/holms-ur/fine-tuning/master/code/yolo/vocTablas.names).
 
+### Comparison of models
+
+In the next table, we compare the [WF1Avg score](http://sac.founderit.com/evaluation.html) obtained by the models fine-tuned from models constructed using natural images, and the models constructed using the TableBank dataset.
+
+||Mask R-CNN Natural| Mask R-CNN TableBank |RetinaNet Natural| RetinaNet TableBank |SSD Natural| SSD TableBank |YOLO Natural| YOLO TableBank |
+|----------|----------|----------|----------|----------|----------|----------|----------|----------|
+|ICDAR13|----------|----------|----------|----------|----------|----------|----------|----------|
+|ICDAR17|----------|----------|----------|----------|----------|----------|----------|----------|
+|ICDAR17FIG|----------|----------|----------|----------|----------|----------|----------|----------|
+|ICDAR17FOR|----------|----------|----------|----------|----------|----------|----------|----------|
+|ICDAR19|----------|----------|----------|----------|----------|----------|----------|----------|
+|Invoices|----------|----------|----------|----------|----------|----------|----------|----------|
+|MarmotChi|----------|----------|----------|----------|----------|----------|----------|----------|
+|MarmotEn|----------|----------|----------|----------|----------|----------|----------|----------|
+|UNLV|----------|----------|----------|----------|----------|----------|----------|----------|
+
 
 ## Fine-tuning
 
