@@ -1,4 +1,4 @@
-# Fine tuning with the RetinaNet algorithm.
+# Fine tuning with the SSD algorithm.
 
 ## Installation 
 
@@ -13,70 +13,54 @@ The [requirementsSSD](../code/ssd/requirementsSSD.txt) can be found in the code 
 
 ## Folder structure
 
-Create a folder ``retinanetmodels``, and organize your dataset with the following structure.
+Create a folder ``ssdmodels`` and inside of it a folder called ``datasets``, and organize your dataset with the following structure. It is important that the name of your dataset starts with the prefix ``VOC``.
 
 ```bash
-retinanetmodels
-└── mydataset
-    ├── annotations
-    │   ├── 00001.xml
-    │   ├── 00002.xml
-    │   ├── 00003.xml
-    │   ├── ...
-    ├── images
-    │   ├── 00001.jpg
-    │   ├── 00002.jpg
-    │   ├── 00003.jpg
-    │   ├── ...
-    ├── snapshots
-    └── train.txt
+ssdmodels
+├── configs
+│   └── mydataset_config.py
+└── datasets
+    └── VOCmydataset
+        ├── Annotations
+        │   ├── 00001.xml
+        │   ├── 00002.xml
+        │   ├── 00003.xml
+        │   ├── ...
+        ├── ImageSets
+        │   └── Main
+        │       └── train.txt
+        └── JPEGImages
+            ├── 00001.jpg
+            ├── 00002.jpg
+            ├── 00003.jpg
+            ├── ...
 ```
-The images must be annotated using the Pascal VOC dataset (xml files of the ``annotations`` folder). A tool for annotating images using this format is [LabelImg](https://github.com/tzutalin/labelImg). The ``train.txt`` must contain the list of images (without their extension) available in the ``images`` folder. Finally, ``snapshots`` is an empty folder where the weights of the models will be stored. 
+The images must be annotated using the Pascal VOC dataset (xml files of the ``Annotations`` folder). A tool for annotating images using this format is [LabelImg](https://github.com/tzutalin/labelImg). The ``train.txt`` must contain the list of images (without their extension) available in the ``JPEGImages`` folder. Finally, the file ``mydataset_config.py`` contains the configuration. In particular, the following options must be provided:
+
+``python
+classes = ['table']  
+datasetName = 'mydataset'
+nepochs = 200
+``
+
+You only need to change ``mydataset`` with the name of your dataset. 
 
 ## Necessary files
 
 In order to fine-tune a model using this algorithm, it is necessary to download the following files in the folder ``retinanetmodels``:
-- [TableBank weights](https://www.dropbox.com/s/rx5zlz3ovywddlh/resnet50_csv_15.h5?dl=1).
-- [Dataset builder](../code/retinanet/build_dataset.py)
+- [TableBank weights](https://www.dropbox.com/s/x95ipfjqoncrzt4/ssd_512_resnet50_tablebank_19.params?dl=0).
+- [Dataset builder](../code/ssd/finetune_detection_transfer.py)
 
 ## Training
 
-First of all, it is necessary to prepare the dataset using the [dataset builder file](../code/retinanet/build_dataset.py) by executing:
-
-```python
-python build_dataset.py -b mydaset
-```
-
-You should end up with the following structure:
-```bash
-retinanetmodels
-└── mydataset
-    ├── annotations
-    │   ├── 00001.xml
-    │   ├── 00002.xml
-    │   ├── 00003.xml
-    │   ├── ...
-    ├── images
-    │   ├── 00001.jpg
-    │   ├── 00002.jpg
-    │   ├── 00003.jpg
-    │   ├── ...
-    ├── resnet50_csv_15.h5  
-    ├── retinanet_train.csv
-    ├── retinanet_classes.csv
-    ├── snapshots
-    └── train.txt
-```
-
-Then, the model can be trained by executing:
+You can train the model by using the following command. 
 
 ```bash
-python retinanet-train --batch-size 4 --steps <steps> --epochs <epochs> --weights resnet50_csv_15.h5 --multi-gpu-force --multi-gpu 2 --snapshot-path mydataset/snapshots csv retinanet_train.csv retinanet_classes.csv
+python finetune_detection_transfer.py -c mydataset_config
 ```
-It is necessary to change the value of ``<steps>`` by the number of images of the datased divided by 4, and ``<epochs>`` by the number of epochs that the model will be trained. 
 
 
-The weights of the models will be stored in the  ``snapshots`` folder. You can use the models created in there using the [RetinaNet notebook](https://colab.research.google.com/drive/1Zgu7v7jLAKe-xITDbhBe9EDdCUozW-OB) or the [predict file](./code/retinanet/predict.py) only by changing the weights files, but first it is necessary to convert the weights of the model following the instructions of the [RetinaNet page](https://github.com/fizyr/keras-retinanet#converting-a-training-model-to-inference-model).
+The weights of the models will be stored in the  same folder where you are executing the above instruction. You can use the models created in there using the [SSD notebook](https://colab.research.google.com/drive/1s8xoKf1gk0Aqs324genSCXXNVG3R-wJc) or the [predict file](./code/ssd/predict.py).
 
 
 
