@@ -9,7 +9,7 @@ virtual environment and install the dependencies using the following command.
 pip install -r requirementsRetinaNet.txt
 ```
 
-The [requirementsRetinaNet](../code/mask-rcnn/requirementsRetinaNet.txt) can be found in the code folder. 
+The [requirementsRetinaNet](../code/retinanet/requirementsRetinaNet.txt) can be found in the code folder. 
 
 ## Folder structure
 
