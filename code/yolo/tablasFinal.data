@@ -1,5 +1,5 @@
 classes= 1
 train  = datasets/mydataset/train.txt
 valid  = datasets/mydataset/train.txt
-names = data/vocTablas.names
+names = vocTablas.names
 backup = backup
