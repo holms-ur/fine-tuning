@@ -52,6 +52,7 @@ def predict(imagePath):
 
 	# show the output image
 	cv2.imwrite("prediction.jpg", output)
+	return boxes
 
 
 def showImage(image):
