@@ -1,0 +1,5 @@
+classes= 1
+train  = tablasFinal/train.txt
+valid  = tablasFinal/test.txt
+names = data/tablasFinal.names
+backup = backup
