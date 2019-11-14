@@ -166,7 +166,8 @@ def predict(name):
     t, _ = net.getPerfProfile()
     #label = 'Inference time: %.2f ms' % (t * 1000.0 / cv.getTickFrequency())
     #cv.putText(frame, label, (0, 15), cv.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255))
-    cv.imwrite("prediction.jpg",frame) 
+    cv.imwrite("prediction.jpg",frame)
+    return boxes1
 
 
 # In[ ]:
