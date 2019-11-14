@@ -7,6 +7,13 @@ In this project, we show the benefits of using models trained on a close domain,
 
 We have started by training several models for the TableBank dataset. All the models, results, and tools are available in the [TableBank page](TableBank.md) of this repository. 
 
+## Colab Notebooks for prediction
+You can use the trained models with the following notebooks. 
+
+- [MaskRCNN Notebook](https://colab.research.google.com/drive/1smseOGcUZZjvMfDHnoW8-ancldz-zpOg)
+- [RetinaNet Notebook](https://colab.research.google.com/drive/1Zgu7v7jLAKe-xITDbhBe9EDdCUozW-OB)
+- [SSD Notebook](https://colab.research.google.com/drive/1s8xoKf1gk0Aqs324genSCXXNVG3R-wJc)
+- [YOLO Notebook](https://colab.research.google.com/drive/19x3FL2vUjF0as6CKrYKmjrqsiiUTjkw6)
 
 ## Model Zoo for table detection
 
