@@ -47,7 +47,7 @@ You only need to change ``mydataset`` with the name of your dataset.
 
 ## Necessary files
 
-In order to fine-tune a model using this algorithm, it is necessary to download the following files in the folder ``retinanetmodels``:
+In order to fine-tune a model using this algorithm, it is necessary to download the following files in the folder ``ssdmodels``:
 - [TableBank weights](https://www.dropbox.com/s/x95ipfjqoncrzt4/ssd_512_resnet50_tablebank_19.params?dl=0).
 - [Dataset builder](../code/ssd/finetune_detection_transfer.py)
 
