@@ -22,6 +22,7 @@ def predict(imagePath):
             continue
         cv2.rectangle(output, (box[0].asscalar(), box[1].asscalar()), (box[2].asscalar(), box[3].asscalar()),(0, 255, 0), 2)
     cv2.imwrite("prediction.jpg", output)
+    return bbox[0]
 
 
 
