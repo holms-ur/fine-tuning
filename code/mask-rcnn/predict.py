@@ -41,6 +41,7 @@ def predict(imagePath):
           cv2.rectangle(output, (box[1], box[0]), (box[3], box[2]),(0, 255, 0), 2)
           cv2.putText(output, label, (box[1], box[0] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
     cv2.imwrite("prediction.jpg", output)
+    return r['rois']
 
 
 
