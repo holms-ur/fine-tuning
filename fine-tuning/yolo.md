@@ -88,7 +88,7 @@ find `pwd`/datasets/mydataset/train/JPEGImages/*.jpg > datasets/mydataset/train.
 
 In order to fine-tune a model using this algorithm, it is necessary to download the following files in the folder ``yolomodels``:
 - [TableBank weights](https://www.dropbox.com/s/jbgosn1t83h1bqi/tablasFinaltrain_10000.weights?dl=1).
-- [Configuration file](../code/yolo/tablasFinaltest416320.cfg)
+- [Configuration file](../code/yolo/tablasFinaltrain416320.cfg)
 - [Names file](../code/yolo/vocTablas.names)
 - [Data file](../code/yolo/tablasFinal.data)
 
