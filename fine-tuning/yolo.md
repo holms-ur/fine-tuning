@@ -32,9 +32,9 @@ The images must be annotated using the Pascal VOC dataset. A tool for annotating
 Initially, all the images and annotations must be stored in the same folder. We need to convert the images to the YOLO format using the following python script 
 that requires the [pascal2yolo file](../code/yolo/pascal2yolo_1class.py) that should be downloaded in the ``yolomodels`` folder:
 
-``bash
+```bash
 python pascal2yolo_1class.py -d datasets/mydataset/train/JPEGImages 
-``
+```
 
 This produces the following file structure
 ```bash
