@@ -13,6 +13,15 @@ We have trained several models for the following datasets: [ICDAR13](http://www.
 - MarmotEn: [train set](splits/marmotEn-train.txt), [test set](splits/marmotEn-test.txt).
 - UNLV: [train set](splits/unlv-train.txt), [test set](splits/unlv-test.txt).
 
+## Tablebank weights
+
+- [Mask-RCNN weights](https://www.dropbox.com/s/dcl53rl3xqndfdx/mask_rcnn_tablebank_cfg_0002.h5?dl=1).
+- [RetinaNet weights](https://www.dropbox.com/s/rx5zlz3ovywddlh/resnet50_csv_15.h5?dl=1).
+- [SSD weights](https://www.dropbox.com/s/x95ipfjqoncrzt4/ssd_512_resnet50_tablebank_19.params?dl=0).
+- [YOLO weights](https://www.dropbox.com/s/jbgosn1t83h1bqi/tablasFinaltrain_10000.weights?dl=1).
+
+You can see how to fine-tune models using the above weights in the [fine-tuning page](FineTuning.md).
+
 ## Fine-tuning from natural images
 
 From models trained with the Pascal VOC dataset, we have created several detection models for the aforementioned datasets using fine-tuning with the algorithms Mask-RCNN, RetinaNet, SSD and YOLO. The results are summarized in the following figure.
