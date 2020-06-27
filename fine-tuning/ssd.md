@@ -37,7 +37,7 @@ ssdmodels
 ```
 The images must be annotated using the Pascal VOC dataset (xml files of the ``Annotations`` folder). A tool for annotating images using this format is [LabelImg](https://github.com/tzutalin/labelImg). The ``train.txt`` must contain the list of images (without their extension) available in the ``JPEGImages`` folder. Finally, the file ``mydataset_config.py`` contains the configuration. In particular, the following options must be provided:
 
-``python
+``bash
 classes = ['table']  
 datasetName = 'mydataset'
 nepochs = 200
