@@ -33,7 +33,7 @@ soupsieve==1.9.1
 tensorboard==1.14.0
 tensorflow==1.15.2
 tensorflow-estimator==1.14.0
-tensorflow-gpu==2.0.1
+tensorflow-gpu==2.7.2
 termcolor==1.1.0
 Werkzeug==0.15.4
 wrapt==1.11.2
